@@ -1,4 +1,4 @@
-@keyframes grow {
+/* @keyframes grow {
   0% {
     transform: scale(0.2);
     opacity: 1;
@@ -62,7 +62,6 @@
   width: 5vh;
   height: 5vh;
   border-radius: 50%;
-  animation: rainbow 1.5s linear infinite;
 }
 
 .child_2 {
@@ -71,4 +70,35 @@
   width: 4vh;
   height: 4vh;
   border-radius: 50%;
+} */
+
+.grid {
+  display: grid;
+  grid-template-columns: auto, 200px;
+  grid-template-rows: 100px repeat(2, 200px) 100px;
+  grid-template-areas:
+    "header header header header"
+    "content content content nav"
+    "content content content nav"
+    "footer footer footer footer";
+}
+
+.header {
+  background-color: orange;
+  grid-area: header;
+}
+
+.content {
+  background-color: aquamarine;
+  grid-area: content;
+}
+
+.nav {
+  background-color: skyblue;
+  grid-area: nav;
+}
+
+.footer {
+  background-color: lightseagreen;
+  grid-area: footer;
 }
