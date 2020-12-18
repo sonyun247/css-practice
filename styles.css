@@ -79,23 +79,24 @@
     transform: scale(2);
   }
 }
-.grid {
+body {
   background: black;
+}
+
+.grid {
   display: grid;
-  height: 90vh;
+  height: 200vh;
   /* grid-template:
     "header header header header" 1fr
     "content content content nav" 3fr
     "footer footer footer footer" 1fr /2fr 2fr 2fr 1fr; */
   gap: 10px;
-  place-content: center start;
-  grid-template-columns: repeat(1, 100px);
-  grid-template-rows: repeat(1, 100px);
-  grid-auto-flow: column;
-  grid-auto-columns: 100px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
 }
 
 .box {
+  border: 2px solid black;
   font-size: 20px;
   text-align: center;
   background-color: white;
