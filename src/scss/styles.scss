@@ -1,6 +1,23 @@
+@import "_variables";
+
 body {
   background: black;
-  a {
-    color: blue;
+}
+
+h1 {
+  color: $red;
+  font-size: $titleSize;
+}
+
+.box {
+  background-color: $red;
+  h1 {
+    color: $blue;
+  }
+  button {
+    background-color: $red;
+    &:hover {
+      color: $white;
+    }
   }
 }

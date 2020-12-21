@@ -56,8 +56,8 @@ you can practice using the below link
 
 ## SCSS
 
-- [ ] Variables
-- [ ] Nesting
+- [x] Variables
+- [x] Nesting
 - [ ] Partials
 - [ ] Mixins
 - [ ] Extend
