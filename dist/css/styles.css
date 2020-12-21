@@ -1,1 +1,1 @@
-body{background:#000}h1{color:red;font-size:32px}.box,.box button{background-color:red}.box h1{color:#00f}.box button:hover{color:#fff}
+body{background:#000}h1{color:red;font-size:32px}.box{background-color:red}.box :focus{outline:0}.box h1{color:#00f}.box:hover{background-color:#00f}.box:hover h1{color:red}.box button:nth-child(odd){background-color:red;color:#fff}.box button:nth-child(even){background-color:#fff;color:red}

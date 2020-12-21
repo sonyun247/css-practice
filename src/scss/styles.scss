@@ -1,4 +1,5 @@
 @import "_variables";
+@import "_mixins";
 
 body {
   background: black;
@@ -10,14 +11,25 @@ h1 {
 }
 
 .box {
+  :focus {
+    outline: none;
+  }
   background-color: $red;
   h1 {
     color: $blue;
   }
+  &:hover {
+    background-color: $blue;
+    h1 {
+      color: $red;
+    }
+  }
   button {
-    background-color: $red;
-    &:hover {
-      color: $white;
+    &:nth-child(odd) {
+      @include button("odd");
+    }
+    &:nth-child(even) {
+      @include button("even");
     }
   }
 }

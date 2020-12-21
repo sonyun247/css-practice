@@ -1,0 +1,9 @@
+@mixin button($word) {
+  @if $word == "odd" {
+    background-color: $red;
+    color: $white;
+  } @else {
+    background-color: $white;
+    color: $red;
+  }
+}
