@@ -1,10 +1,20 @@
 @import "_variables";
 @import "_mixins";
+@import "_buttons";
 
 body {
   background: black;
 }
-
+a {
+  @extend %button;
+  text-decoration: none;
+}
+button {
+  @extend %button;
+  :focus {
+    outline: none;
+  }
+}
 h1 {
   color: $red;
   font-size: $titleSize;
