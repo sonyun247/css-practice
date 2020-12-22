@@ -1,45 +1,23 @@
 @import "_variables";
 @import "_mixins";
-@import "_buttons";
 
 body {
   background: black;
 }
-a {
-  @extend %button;
-  text-decoration: none;
-}
-button {
-  @extend %button;
-  :focus {
-    outline: none;
-  }
-}
 h1 {
-  color: $red;
-  font-size: $titleSize;
-}
-
-.box {
-  :focus {
-    outline: none;
+  color: white;
+  @include responsive("iphone") {
+    color: gray;
   }
-  background-color: $red;
-  h1 {
-    color: $blue;
+  @include responsive("ipad") {
+    color: blue;
   }
-  &:hover {
-    background-color: $blue;
-    h1 {
-      color: $red;
-    }
+  @include responsive("iphone-l") {
+    font-size: 50px;
+    color: yellow;
   }
-  button {
-    &:nth-child(odd) {
-      @include button("odd");
-    }
-    &:nth-child(even) {
-      @include button("even");
-    }
+  @include responsive("ipad-l") {
+    font-size: 80px;
+    color: red;
   }
 }

@@ -58,8 +58,11 @@ you can practice using the below link
 
 - [x] Variables
 - [x] Nesting
-- [ ] Partials
-- [ ] Mixins
-- [ ] Extend
-- [ ] Responsive Mixins
+- [x] Partials
+- [x] Mixins
+- [x] Extend
+- [x] Responsive Mixins
++ _FYI_
+  
+  [awesome scss mixins](https://github.com/colourgarden/awesome-scss)
 
