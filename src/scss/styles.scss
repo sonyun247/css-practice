@@ -1,63 +1,83 @@
-@import "./mixins";
 @import "./variables";
-
-@keyframes moveText {
-  from {
-    transform: translateX(80%);
-  }
-  to {
-    transform: translateX(-80%);
-  }
-}
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  text-transform: uppercase;
-  height: 100vh;
-  background-color: $bgColor;
-  display: grid;
-  grid-template-columns: 1fr 1.5fr 1fr;
-  grid-template-rows: 1fr 5fr 1fr;
-  gap: $gap;
-  & > * {
-    background-color: white;
-    color: $bgColor;
-    @extend %flex-center;
-    font-size: 1.5em;
-  }
-  .title {
-    letter-spacing: 0.4em;
-    font-style: italic;
-    font-weight: 600;
-  }
-  .menu {
-    @extend %button;
-  }
-  .center-img {
-    grid-column: 2/-2;
-    grid-row: 2/-2;
-    background-image: url("../../src/img/even.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-  .number__row {
-    display: grid;
-    gap: $gap;
-    background-color: $bgColor;
-    align-items: stretch;
-    justify-content: stretch;
-    .number {
-      @extend %button;
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $fixedTop;
+    display: flex;
+    align-items: center;
+    nav {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      text-transform: lowercase;
+      font-size: 2em;
+      ul {
+        display: flex;
+        align-items: center;
+        padding: 0 1vw;
+        cursor: pointer;
+        &:hover {
+          background-color: gainsboro;
+        }
+        &:first-child {
+          &:hover {
+            li:not(:first-child) {
+              color: white;
+            }
+          }
+          li {
+            &:not(:first-child) {
+              color: gainsboro;
+            }
+          }
+        }
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+        li {
+          &:not(:last-child) {
+            margin-right: 5vw;
+          }
+        }
+        .country {
+          font-size: 0.5em;
+          margin-left: 8vw;
+          margin-top: 4vh;
+        }
+      }
     }
   }
-  .moving-text {
-    overflow: hidden;
-    white-space: nowrap;
-    span {
-      animation: moveText 10s ease-out infinite;
+  main {
+    margin-top: $fixedTop;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 47vh;
+    article {
+      cursor: pointer;
+      height: 100%;
+      display: grid;
+      grid-template-rows: 10fr 1fr;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+      h3 {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        padding-left: 1vw;
+        font-size: 1em;
+      }
     }
   }
 }
