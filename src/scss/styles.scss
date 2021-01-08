@@ -8,10 +8,11 @@
 body {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
-  main,
-  footer {
+  main {
     grid-column: 2 / -2;
-    // overflow: hidden;
+  }
+  footer {
+    grid-column: 1/-1;
   }
 }
 
@@ -42,6 +43,17 @@ header {
 
 main {
   margin-top: $fixedTop;
+  h4 {
+    @extend %titleFont;
+  }
+  article {
+    padding: 3vh 0;
+    border-bottom: $border;
+  }
+  .btn {
+    @extend %button;
+    border: $border;
+  }
   .hero {
     div:first-child {
       @extend %flex-center;
@@ -79,11 +91,9 @@ main {
         padding-right: 3em;
         font-size: 0.7em;
         font-weight: 600;
+        cursor: pointer;
       }
     }
-  }
-  h4 {
-    @extend %titleFont;
   }
   .subjects-vertical {
     display: flex;
@@ -92,12 +102,10 @@ main {
     align-items: center;
     width: 100%;
     article {
-      padding: 3vh 0;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: auto;
       height: 60vh;
-      border-bottom: $border;
       div {
         height: 100%;
         justify-content: space-between;
@@ -107,17 +115,134 @@ main {
         p {
           @extend %paragraphFont;
         }
-        .btn {
-          @extend %button;
-          border: $border;
-        }
       }
       img {
+        padding-left: 1vw;
         height: 100%;
         width: 100%;
       }
-      img:nth-child(even) {
-        // order: -1;
+      &:nth-child(2),
+      &:nth-child(4) {
+        div {
+          padding-left: 1vw;
+        }
+        img {
+          order: -1;
+          padding-right: 1vw;
+        }
+      }
+    }
+  }
+  .subjects-horizontal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    article {
+      &:first-child {
+        padding-right: 1.2vw;
+      }
+      h4 {
+        padding-bottom: 5vh;
+      }
+      img {
+        height: 55vh;
+        width: 100%;
+        padding-bottom: 3vh;
+      }
+      p {
+        font-size: 1.5em;
+        line-height: 1.2;
+        margin-bottom: 5vh;
+      }
+      .btns {
+        display: flex;
+        align-items: center;
+        a {
+          margin-right: 1vw;
+        }
+      }
+      a {
+        margin-bottom: 5vh;
+      }
+    }
+  }
+  .subjects-ad {
+    article {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      height: 60vh;
+      div {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        h4 {
+          margin-bottom: 5vh;
+        }
+        p {
+          @extend %paragraphFont;
+        }
+        a {
+          margin-top: 7vh;
+        }
+      }
+      img {
+        padding-left: 1vw;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  .links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .link {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 40vh;
+      margin-bottom: 7vh;
+      p {
+        font-size: 1.5em;
+        line-height: 1.4;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $footerColor;
+  height: 45vh;
+  color: white;
+  display: grid;
+  grid-template-columns: 10% 40% 50%;
+  .footer-top,
+  .footer-bottom {
+    grid-column: 2/-1;
+  }
+  .footer-top {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    padding: 4vh 0;
+    span {
+      font-size: 1.7em;
+      font-weight: 600;
+    }
+    ul {
+      display: flex;
+      align-items: flex-start;
+      li {
+        padding-right: 7vw;
+        font-size: 1em;
+      }
+    }
+  }
+  .footer-bottom {
+    li {
+      padding-bottom: 1vh;
+      &:first-child {
+        padding-top: 5vh;
+      }
+      &:nth-child(3) {
+        padding-top: 3vh;
       }
     }
   }
