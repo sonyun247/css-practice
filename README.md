@@ -1,10 +1,10 @@
 # css-practice
 
-you can practice using the below link 
+you can practice using the below link
 
 ## Flexbox
 
-  [Flexbox Froggy](https://flexboxfroggy.com)
+[Flexbox Froggy](https://flexboxfroggy.com)
 
 - [x] flex-direction
 - [x] order
@@ -16,10 +16,10 @@ you can practice using the below link
 - [x] flex-grow
 - [x] flex-shrink
 - [x] flex-basis
- 
+
 ## Grid
 
-  [Grid Garden](https://cssgridgarden.com)
+[Grid Garden](https://cssgridgarden.com)
 
 - [x] grid-template-columns
 - [x] grid-template-rows
@@ -62,8 +62,9 @@ you can practice using the below link
 - [x] Mixins
 - [x] Extend
 - [x] Responsive Mixins
-+ _FYI_
-  
+
+* _FYI_
+
   [awesome scss mixins](https://github.com/colourgarden/awesome-scss)
 
 ## To Clone:
@@ -79,4 +80,3 @@ you can practice using the below link
 - [ ] [http://donicaida.com/](http://donicaida.com/)
 - [ ] [https://canalstreet.market/](https://canalstreet.market/)
 - [ ] [https://wonhundred.com/](https://wonhundred.com/)
-
