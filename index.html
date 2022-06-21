@@ -8,125 +8,277 @@
       src="https://kit.fontawesome.com/aa1d5970f0.js"
       crossorigin="anonymous"
     ></script>
-    <title>Won Hundred v1 clone</title>
+    <title>Won Hundred v2 clone</title>
   </head>
   <body>
-    <header class="header">
-      <nav>
-        <ul class="grid">
-          <li>search</li>
-          <li class="logo"><h2>won hundred</h2></li>
-          <li>shopping bag (0)</li>
-          <li>journal</li>
-          <li>women</li>
-          <li>men</li>
-          <li>currency</li>
+    <header class="header grid">
+      <h3 class="logo"><a href="#">won hundred</a></h3>
+      <nav class="nav-category">
+        <ul>
+          <li><a href="#">jeans</a></li>
+          <li><a href="#">women</a></li>
+          <li><a href="#">men</a></li>
+          <li><a href="#">universe</a></li>
+          <li><a href="#">responsibility</a></li>
+        </ul>
+      </nav>
+      <nav class="nav-right">
+        <ul>
+          <li><a href="#">search</a></li>
+          <li><a href="#">currency</a></li>
+          <li><a href="#">bag (0)</a></li>
         </ul>
       </nav>
     </header>
-    <main class="main">
-      <header class="main-header">
-        <h1 class="main-header__title">Spring Summer – Volume 2</h1>
-        <h6 class="main-header__subtitle">
-          Get your wardrobe ready for those upcoming warm spring days with our
-          second delivery of Spring Summer 20.
-        </h6>
-      </header>
+    <main>
       <section class="hero grid">
-        <img
-          class="hero__img"
-          src="https://source.unsplash.com/random"
-          alt="fashion pictorial"
-        />
-        <img
-          class="hero__img"
-          src="https://source.unsplash.com/random/1"
-          alt="fashion pictorial"
-        />
-        <img
-          class="hero__img"
-          src="https://source.unsplash.com/random/2"
-          alt="fashion pictorial"
-        />
-        <img
-          class="hero__img"
-          src="https://source.unsplash.com/random/3"
-          alt="fashion pictorial"
-        />
+        <article class="grid-article">
+          <a href="#" class="hero__link">
+            <span class="hero__title">womens sale</span>
+            <img src="/imgs/woman.webp" alt="woman" />
+          </a>
+        </article>
+        <article class="grid-article">
+          <a href="#" class="hero__link">
+            <span class="hero__title">mens sale</span>
+            <img src="/imgs/man.webp" alt="woman" />
+          </a>
+        </article>
       </section>
-      <section class="new-arrivals">
-        <h2 class="new-arrivals__title">Selected New Arrivals</h2>
-        <div class="new-arrivals__wrapper grid">
-          <figure class="new-arrivals__item">
-            <a href="#">
-              <img
-                src="https://source.unsplash.com/random/1"
-                alt="clothes"
-                loading="lazy"
-                class="item__img"
-              />
-              <figcaption class="item__name">
-                Jonah Shirt - Zen Blue
-                <span class="item__price">900 DKK</span>
-              </figcaption>
-            </a>
-          </figure>
-          <figure class="new-arrivals__item">
-            <a href="#">
-              <img
-                src="https://source.unsplash.com/random/1"
-                alt="clothes"
-                loading="lazy"
-                class="item__img"
-              />
-              <figcaption class="item__name">
-                Jonah Shirt - Zen Blue
-                <span class="item__price">900 DKK</span>
-              </figcaption>
-            </a>
-          </figure>
-          <figure class="new-arrivals__item">
-            <a href="#">
-              <img
-                src="https://source.unsplash.com/random/1"
-                alt="clothes"
-                loading="lazy"
-                class="item__img"
-              />
-              <figcaption class="item__name">
-                Jonah Shirt - Zen Blue
-                <span class="item__price">900 DKK</span>
-              </figcaption>
-            </a>
-          </figure>
-          <figure class="new-arrivals__item">
-            <a href="#">
-              <img
-                src="https://source.unsplash.com/random/1"
-                alt="clothes"
-                loading="lazy"
-                class="item__img"
-              />
-              <figcaption class="item__name">
-                Jonah Shirt - Zen Blue
-                <span class="item__price">900 DKK</span>
-              </figcaption>
-            </a>
-          </figure>
-          <a href="#"><h3>Shop Women's New Arrivals</h3></a>
-          <a href="#"><h3>Shop Men's New Arrivals</h3></a>
+      <section class="season-collection grid">
+        <div class="season-collection__tab grid">
+          <a href="#" class="active">women's pf22</a>
+          <a href="#">men's pf22</a>
         </div>
+        <div class="season-collection__items grid">
+          <a href="#" class="items__item">
+            <img
+              src="https://source.unsplash.com/random"
+              alt="seasonal clothes pictorial"
+              class="item__img"
+            />
+            <div class="item__info">
+              <span class="item__name">lucinda dress - black</span>
+              <span class="item__price">1200</span>
+            </div>
+          </a>
+          <a href="#" class="items__item">
+            <img
+              src="https://source.unsplash.com/random/1"
+              alt="seasonal clothes pictorial"
+              class="item__img"
+            />
+            <div class="item__info">
+              <span class="item__name">dress - black</span>
+              <span class="item__price">1200</span>
+            </div>
+          </a>
+          <a href="#" class="items__item">
+            <img
+              src="https://source.unsplash.com/random"
+              alt="seasonal clothes pictorial"
+              class="item__img"
+            />
+            <div class="item__info">
+              <span class="item__name">dress - black</span>
+              <span class="item__price">1200</span>
+            </div>
+          </a>
+          <a href="#" class="items__item">
+            <img
+              src="https://source.unsplash.com/random/1"
+              alt="seasonal clothes pictorial"
+              class="item__img"
+            />
+            <div class="item__info">
+              <span class="item__name">dress - black</span>
+              <span class="item__price">1200</span>
+            </div>
+          </a>
+        </div>
+        <button type="button" class="season-collection__more btn">
+          view all products
+        </button>
+      </section>
+      <section class="main-campaign grid">
+        <article class="grid-article">
+          <a href="#" class="hero__link">
+            <span class="hero__title">shop men's jeans</span>
+            <img src="/imgs/man.webp" alt="men's jeans" />
+          </a>
+        </article>
+        <article class="grid-article">
+          <a href="#" class="hero__link">
+            <span class="hero__title">shop women's jeans</span>
+            <img src="/imgs/woman.webp" alt="women's jeans" />
+          </a>
+        </article>
+        <article class="grid-article text">
+          <span>Won Hundred presents:</span>
+          <h3>the deadstock bags</h3>
+          <p>
+            Our new denim bags are made of deadstock fabric and offer a new
+            lease of life to otherwise discarded fabric. Won Hundred stands by
+            the promise of continually striving to produce ethically &
+            responsibly. <em>Instead of starting over, we keep going.</em>
+          </p>
+          <p>
+            Every year, tons and tons of fabric are being discarded, and never
+            used. We, at Won Hundred, want to diminish the waste by making some
+            of our styles using these “Dead stock” fabrics. Right now, we
+            already have our Won Hundred – Division collab made on dead stock
+            from exclusive Italian deadstock fabric and our Dead stock tote
+            bags. We are also looking to expand this production to a whole
+            collection in the future.
+          </p>
+        </article>
+        <article class="grid-article">
+          <a href="#" class="hero__link">
+            <img src="/imgs/woman.webp" alt="bag" />
+          </a>
+        </article>
+        <article class="grid-article">
+          <a href="#" class="hero__link">
+            <img src="/imgs/woman.webp" alt="bag" />
+          </a>
+        </article>
+        <article class="grid-article text">
+          <span>won hundred presents:</span>
+          <h3>the deadstock bags</h3>
+          <p>
+            Our new denim bags are made of deadstock fabric and offer a new
+            lease of life to otherwise discarded fabric. Won Hundred stands by
+            the promise of continually striving to produce ethically &
+            responsibly. Instead of starting over, we keep going.
+          </p>
+          <p>
+            Every year, tons and tons of fabric are being discarded, and never
+            used. We, at Won Hundred, want to diminish the waste by making some
+            of our styles using these “Dead stock” fabrics. Right now, we
+            already have our Won Hundred – Division collab made on dead stock
+            from exclusive Italian deadstock fabric and our Dead stock tote
+            bags. We are also looking to expand this production to a whole
+            collection in the future.
+          </p>
+        </article>
+      </section>
+      <section class="lookbook grid">
+        <h3 class="lookbook__header">shop the look</h3>
+        <article class="lookbook__item">
+          <img src="/imgs/man.webp" alt="" class="item__img" />
+          <button type="button" class="item__spot"></button>
+          <button type="button" class="item__spot"></button>
+        </article>
+        <article class="lookbook__item">
+          <a href="#" class="item__link items__item">
+            <img
+              src="https://source.unsplash.com/random/1"
+              alt=""
+              class="item__img"
+            />
+            <div class="item__info">
+              <span class="item__name">dress - black</span>
+              <span class="item__price">1200</span>
+            </div>
+            <span class="item__view">view this product</span>
+          </a>
+        </article>
+      </section>
+      <section class="sns grid">
+        <article class="sns__slideshow">
+          <a href="#">
+            <img src="https://source.unsplash.com/random/" alt="" />
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </article>
+        <article class="sns__slideshow">
+          <a href="#">
+            <img src="https://source.unsplash.com/random/1" alt="" /><i
+              class="fa-brands fa-instagram"
+            ></i>
+          </a>
+        </article>
+        <article class="sns__slideshow">
+          <a href="#">
+            <img src="https://source.unsplash.com/random/2" alt="" /><i
+              class="fa-brands fa-instagram"
+            ></i>
+          </a>
+        </article>
+        <article class="sns__slideshow">
+          <a href="#">
+            <img src="https://source.unsplash.com/random/3" alt="" /><i
+              class="fa-brands fa-instagram"
+            ></i>
+          </a>
+        </article>
+        <article class="sns__slideshow">
+          <a href="#">
+            <img src="https://source.unsplash.com/random/4" alt="" /><i
+              class="fa-brands fa-instagram"
+            ></i>
+          </a>
+        </article>
       </section>
     </main>
-    <footer class="footer">
-      <nav>
-        <ul class="grid">
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
+    <footer class="grid">
+      <section class="newsletter grid">
+        <h5 class="newsletter__title">
+          SUBSCRIBE AND GET 10% OFF YOUR FIRST ORDER
+        </h5>
+        <label for="agree">
+          <input type="checkbox" name="agree" id="agree" />
+          I agree, to receive emails from Won Hundred.
+        </label>
+        <label for="email">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email address"
+          />
+        </label>
+        <button class="newsletter__btn btn" type="button">women's</button>
+        <button class="newsletter__btn btn" type="button">men's</button>
+      </section>
+      <section class="info">
+        <span class="info__title"> FOLLOW US</span>
+        <a href="#">FACEBOOK</a>
+        <a href="#">INSTAGRAM</a>
+        <br />
+        <span class="info__title">WON HUNDRED</span>
+        <br />
+        GAMMEL KONGEVEJ 102, 1 TV <br />
+        1850 FREDERIKSBERG C, DENMARK <br />
+        CVR 27759491
+        <span class="info__email">CUSTOMERCARE@WONHUNDRED.COM </span>
+      </section>
+      <section class="footer__nav">
+        <nav class="grid">
+          <ul>
+            <li><a href="#">Gift Card</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Exchange & Return</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">B2B</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="payments">
+        <ul>
+          <li><img src="/imgs/visa.png" alt="visa" /><span>visa</span></li>
+          <li><img src="/imgs/visa.png" alt="visa" /><span>visa</span></li>
+          <li><img src="/imgs/visa.png" alt="visa" /><span>visa</span></li>
+          <li><img src="/imgs/visa.png" alt="visa" /><span>visa</span></li>
+          <li><img src="/imgs/visa.png" alt="visa" /><span>visa</span></li>
         </ul>
-      </nav>
+      </section>
     </footer>
   </body>
 </html>
