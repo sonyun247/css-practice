@@ -4,11 +4,16 @@
   "source": "index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "prebuild-dev": "shx rm -rf dist/*",
+    "build-dev": "parcel build --no-optimize --public-url ./",
+    "build": "parcel build",
+    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "2.6.0",
     "parcel": "latest",
-    "parcel-plugin-static-files-copy": "^2.6.0"
+    "parcel-plugin-static-files-copy": "^2.6.0",
+    "push-dir": "^0.4.1",
+    "shx": "^0.3.4"
   }
 }
