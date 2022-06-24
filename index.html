@@ -2,291 +2,347 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/scss/styles.scss" />
     <script
       src="https://kit.fontawesome.com/aa1d5970f0.js"
       crossorigin="anonymous"
     ></script>
-    <title>Won Hundred v2 clone</title>
+    <title>CSS Practice</title>
   </head>
-  <body>
-    <header class="header grid">
-      <h3 class="logo"><a href="#">won hundred</a></h3>
-      <nav class="header__nav-category">
-        <ul>
-          <li><a href="#">jeans</a></li>
-          <li><a href="#">women</a></li>
-          <li><a href="#">men</a></li>
-          <li><a href="#">universe</a></li>
-          <li><a href="#">responsibility</a></li>
-        </ul>
-      </nav>
-      <nav class="header__nav-personal">
-        <ul>
-          <li><a href="#">search</a></li>
-          <li><a href="#">currency</a></li>
-          <li><a href="#">bag (0)</a></li>
-        </ul>
-      </nav>
+  <body id="home" class="home">
+    <header class="home__header">
+      <h1 class="header__title">css practice lists</h1>
     </header>
-    <main class="main">
-      <section class="hero grid">
-        <article class="hero__article">
-          <a href="#" class="hero__link">
-            <h6 class="hero__title">womens sale</h6>
-            <img
-              src="/imgs/woman.webp"
-              alt="fashionable woman"
-              class="hero__img"
-            />
-          </a>
-        </article>
-        <article class="hero__article">
-          <a href="#" class="hero__link">
-            <h6 class="hero__title">mens sale</h6>
-            <img src="/imgs/man.webp" alt="fashionable man" class="hero__img" />
-          </a>
-        </article>
-      </section>
-      <section class="season-collection grid">
-        <div class="season-collection__tab grid">
-          <button type="button"class="tab__btn btn btn--active">women's pf22</a>
-          <button type="button"class="tab__btn btn">men's pf22</a>
-        </div>
-        <div class="season-collection__items items grid">
-          <a href="#" class="items__item">
-            <img
-              src="https://source.unsplash.com/random"
-              alt="seasonal clothes pictorial"
-              class="item__img"
-            />
-            <div class="item__info">
-              <span class="item__name">lucinda dress - black</span>
-              <span class="item__price">1200</span>
-            </div>
-          </a>
-          <a href="#" class="items__item">
-            <img
-              src="https://source.unsplash.com/random/1"
-              alt="seasonal clothes pictorial"
-              class="item__img"
-            />
-            <div class="item__info">
-              <span class="item__name">dress - black</span>
-              <span class="item__price">1200</span>
-            </div>
-          </a>
-          <a href="#" class="items__item">
-            <img
-              src="https://source.unsplash.com/random"
-              alt="seasonal clothes pictorial"
-              class="item__img"
-            />
-            <div class="item__info">
-              <span class="item__name">dress - black</span>
-              <span class="item__price">1200</span>
-            </div>
-          </a>
-          <a href="#" class="items__item">
-            <img
-              src="https://source.unsplash.com/random/1"
-              alt="seasonal clothes pictorial"
-              class="item__img"
-            />
-            <div class="item__info">
-              <span class="item__name">dress - black</span>
-              <span class="item__price">1200</span>
-            </div>
-          </a>
-        </div>
-        <button type="button" class="season-collection__more btn">
-          view all products
-        </button>
-      </section>
-      <section class="main-campaign grid">
-        <article class="hero__article">
-          <a href="#" class="hero__link">
-            <h6 class="hero__title">shop men's jeans</h6>
-            <img src="/imgs/man.webp" alt="men's jeans" class="hero__img" />
-          </a>
-        </article>
-        <article class="hero__article">
-          <a href="#" class="hero__link">
-            <h6 class="hero__title">shop women's jeans</h6>
-            <img src="/imgs/woman.webp" alt="women's jeans" class="hero__img"/>
-          </a>
-        </article>
-        <article class="article-text">
-          <span>Won Hundred presents:</span>
-          <h5>the deadstock bags</h5>
-          <p>
-            Our new denim bags are made of deadstock fabric and offer a new
-            lease of life to otherwise discarded fabric. Won Hundred stands by
-            the promise of continually striving to produce ethically &
-            responsibly. <em>Instead of starting over, we keep going.</em>
-          </p>
-          <p>
-            Every year, tons and tons of fabric are being discarded, and never
-            used. We, at Won Hundred, want to diminish the waste by making some
-            of our styles using these “Dead stock” fabrics. Right now, we
-            already have our Won Hundred – Division collab made on dead stock
-            from exclusive Italian deadstock fabric and our Dead stock tote
-            bags. We are also looking to expand this production to a whole
-            collection in the future.
-          </p>
-        </article>
-        <article class="hero__article">
-          <a href="#" class="hero__link">
-            <img src="/imgs/woman.webp" alt="bag" class="hero__img"/>
-          </a>
-        </article>
-        <article class="hero__article">
-          <a href="#" class="hero__link">
-            <img src="/imgs/woman.webp" alt="bag" class="hero__img"/>
-          </a>
-        </article>
-        <article class="article-text">
-          <h5>our sustainability ambitions</h5>
-          <p>
-            At Won Hundred, we take a proactive stance in bettering our industry
-            and reducing our environmental impact. We believe the key to ethical
-            and responsible business practices is not only reducing our carbon
-            footprint but also improving the conditions for the people and
-            animals involved. It is important for us that our suppliers wish to
-            partake in our journey - only this way can we achieve long-term
-            success and trust.
-          </p>
-          <p>
-            We are aware that the fashion and textile industry holds many
-            challenges in terms of ethics and sustainability. However, as
-            sustainability applies to everybody, it is our belief that the size
-            of the company should never be an excuse to practice sustainable and
-            responsible business. We are convinced that continuously “doing
-            something” is better than “doing nothing”.
-          </p>
-          <a href="#">Read more.</a>
-        </article>
-      </section>
-      <section class="lookbook grid">
-        <h5 class="lookbook__header">shop the look</h5>
-        <article class="lookbook__pictorial">
-          <img src="/imgs/man.webp" alt="" class="pictorial__img" />
-          <button type="button" class="pictorial__spot spot"></button>
-          <button type="button" class="pictorial__spot spot"></button>
-        </article>
-        <article class="lookbook__detail items">
-          <a href="#" class="items__item">
-            <img
-              src="https://source.unsplash.com/random/1"
-              alt=""
-              class="item__img"
-            />
-            <div class="item__info">
-              <span class="item__name">dress - black</span>
-              <span class="item__price">1200</span>
-            </div>
-            <span class="item__view">view this product</span>
-          </a>
-        </article>
-      </section>
-      <section class="sns grid">
-        <article class="sns__slideshow">
-          <a href="#">
-            <img src="https://source.unsplash.com/random/" alt="" />
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-        </article>
-        <article class="sns__slideshow">
-          <a href="#">
-            <img src="https://source.unsplash.com/random/1" alt="" /><i
-              class="fa-brands fa-instagram"
-            ></i>
-          </a>
-        </article>
-        <article class="sns__slideshow">
-          <a href="#">
-            <img src="https://source.unsplash.com/random/2" alt="" /><i
-              class="fa-brands fa-instagram"
-            ></i>
-          </a>
-        </article>
-        <article class="sns__slideshow">
-          <a href="#">
-            <img src="https://source.unsplash.com/random/3" alt="" /><i
-              class="fa-brands fa-instagram"
-            ></i>
-          </a>
-        </article>
-        <article class="sns__slideshow">
-          <a href="#">
-            <img src="https://source.unsplash.com/random/4" alt="" /><i
-              class="fa-brands fa-instagram"
-            ></i>
-          </a>
-        </article>
-      </section>
-    </main>
-    <footer class="footer grid">
-      <section class="footer__newsletter grid">
-        <h6 class="newsletter__title">
-          SUBSCRIBE AND GET 10% OFF YOUR FIRST ORDER
-        </h6>
-        <label for="agree">
-          <input type="checkbox" name="agree" id="agree" />
-          I agree, to receive emails from Won Hundred.
-        </label>
-        <label for="email">
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="email address"
+    <main class="home__main">
+      <article class="cards">
+        <a href="./projects/mobile-frame/index.html" class="cards__link">
+          <img
+            src="./images/mobile-frame.webp"
+            aria-labelledby="mobile-frame"
+            class="cards__thumbnail"
           />
-        </label>
-        <button class="newsletter__btn btn" type="button">women's</button>
-        <button class="newsletter__btn btn" type="button">men's</button>
-      </section>
-      <section class="footer__info">
-        <h6 class="info__title">FOLLOW US</h6>
-        <ul class="info__follow">
-          <li><a href="#">FACEBOOK</a></li>
-          <li><a href="#">INSTAGRAM</a></li>
-        </ul>
-        <address class="info__address">
-          <h6 class="info__title">WON HUNDRED</h6>
-          GAMMEL KONGEVEJ 102, 1 TV <br />
-          1850 FREDERIKSBERG C, DENMARK <br />
-          CVR 27759491
-          <a class="info__email" href="mailto:CUSTOMERCARE@WONHUNDRED.COM">CUSTOMERCARE@WONHUNDRED.COM</a>
-        </address>
-      </section>
-      <section class="footer__nav">
-        <nav class="grid">
-          <ul>
-            <li><a href="#">Gift Card</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Account</a></li>
-            <li><a href="#">Exchange & Return</a></li>
-          </ul>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Sustainability</a></li>
-            <li><a href="#">B2B</a></li>
-          </ul>
-        </nav>
-      </section>
-      <section class="footer__payments">
+        </a>
+        <footer class="cards__footer">
+          <h6 id="mobile-frame" class="cards__title">mobile frame</h6>
+          <span class="cards__date">2020.12.23</span>
+        </footer>
+      </article>
+      <article class="cards">
+        <a href="./projects/best-horror-scenes/index.html" class="cards__link">
+          <img
+            src="./images/best-horror-scenes.webp"
+            aria-labelledby="best-horror-scenes"
+            class="cards__thumbnail"
+          />
+        </a>
+        <footer class="cards__footer">
+          <h6 id="best-horror-scenes" class="cards__title">
+            best horror scenes
+          </h6>
+          <span class="cards__date">2020.12.23</span>
+        </footer>
+      </article>
+      <article class="cards">
+        <a href="./projects/paintbox/index.html" class="cards__link">
+          <img
+            src="./images/paintbox.webp"
+            aria-labelledby="paintbox"
+            class="cards__thumbnail"
+          />
+        </a>
+        <footer class="cards__footer">
+          <h6 id="paintbox" class="cards__title">paintbox</h6>
+          <span class="cards__date">2020.12.29</span>
+        </footer>
+      </article>
+      <article class="cards">
+        <a href="./projects/10x19/index.html" class="cards__link">
+          <img
+            src="./images/10x19.webp"
+            aria-labelledby="1019-art-gallery"
+            class="cards__thumbnail"
+          />
+        </a>
+        <footer class="cards__footer">
+          <h6 id="1019-art-gallery" class="cards__title">10x19</h6>
+          <span class="cards__date">2021.1.4</span>
+        </footer>
+      </article>
+      <article class="cards">
+        <a href="./projects/zoo/index.html" class="cards__link">
+          <img
+            src="./images/zoo.webp"
+            aria-labelledby="zoo-design-graphic"
+            class="cards__thumbnail"
+          />
+        </a>
+        <footer class="cards__footer">
+          <h6 id="zoo-design-graphic" class="cards__title">zoo</h6>
+          <span class="cards__date">2021.1.5</span>
+        </footer>
+      </article>
+      <article class="cards">
+        <a href="./projects/schwartz/index.html" class="cards__link">
+          <img
+            src="./images/schwartz-media.webp"
+            aria-labelledby="schwartz-media"
+            class="cards__thumbnail"
+          />
+        </a>
+        <footer class="cards__footer">
+          <h6 id="schwartz-media" class="cards__title">schwartz media</h6>
+          <span class="cards__date">2021.1.8</span>
+        </footer>
+      </article>
+      <article class="cards">
+        <a href="./projects/tolv/index.html" class="cards__link">
+          <img
+            src="./images/tolv.webp"
+            aria-labelledby="tolv"
+            class="cards__thumbnail"
+          />
+        </a>
+        <footer class="cards__footer">
+          <h6 id="tolv" class="cards__title">tolv</h6>
+          <span class="cards__date">2021.1.14</span>
+        </footer>
+      </article>
+      <article class="cards">
+        <a href="./projects/bad-religion/index.html" class="cards__link">
+          <img
+            src="./images/bad-religion.webp"
+            aria-labelledby="bad-religion-show-poster"
+            class="cards__thumbnail"
+          />
+        </a>
+        <footer class="cards__footer">
+          <h6 id="bad-religion-show-poster" class="cards__title">
+            bad religion
+          </h6>
+          <span class="cards__date">2021.1.14</span>
+        </footer>
+      </article>
+      <article class="cards">
+        <a href="./projects/clip-paper/index.html" class="cards__link">
+          <img
+            src="./images/clip-paper.webp"
+            aria-labelledby="clip-paper"
+            class="cards__thumbnail"
+          />
+        </a>
+        <footer class="cards__footer">
+          <h6 id="clip-paper" class="cards__title">clip & paper</h6>
+          <span class="cards__date">2021.1.15</span>
+        </footer>
+      </article>
+      <article class="cards">
+        <a href="./projects/ostrich/index.html" class="cards__link">
+          <img
+            src="./images/ostrich.webp"
+            aria-labelledby="simple-grid"
+            class="cards__thumbnail"
+          />
+        </a>
+        <footer class="cards__footer">
+          <h6 id="simple-grid" class="cards__title">simple grid</h6>
+          <span class="cards__date">2021.1.16</span>
+        </footer>
+      </article>
+      <article class="cards">
+        <a
+          href="./projects/foreword-contributors/index.html"
+          class="cards__link"
+        >
+          <img
+            src="./images/foreword.webp"
+            aria-labelledby="foreword-contributors"
+            class="cards__thumbnail"
+          />
+        </a>
+        <footer class="cards__footer">
+          <h6 id="foreword-contributors" class="cards__title">
+            foreword, contributors
+          </h6>
+          <span class="cards__date">2021.1.17</span>
+        </footer>
+      </article>
+      <article class="cards">
+        <a href="./projects/changes/index.html" class="cards__link">
+          <img
+            src="./images/changes.webp"
+            aria-labelledby="changes events"
+            class="cards__thumbnail"
+          />
+        </a>
+        <footer class="cards__footer">
+          <h6 id="changes events" class="cards__title">changes</h6>
+          <span class="cards__date">2021.1.18</span>
+        </footer>
+      </article>
+      <article class="cards">
+        <a href="./projects/curry-cafe/index.html" class="cards__link">
+          <img
+            src="./images/curry-cafe.webp"
+            aria-labelledby="curry-cafe"
+            class="cards__thumbnail"
+          />
+        </a>
+        <footer class="cards__footer">
+          <h6 id="curry-cafe" class="cards__title">curry cafe</h6>
+          <span class="cards__date">2021.1.20</span>
+        </footer>
+      </article>
+      <article class="cards">
+        <a href="./projects/layout/index.html" class="cards__link">
+          <img
+            src="./images/layout.webp"
+            aria-labelledby="layout"
+            class="cards__thumbnail"
+          />
+        </a>
+        <footer class="cards__footer">
+          <h6 id="layout" class="cards__title">layout</h6>
+          <span class="cards__date">2021.1.21</span>
+        </footer>
+      </article>
+      <article class="cards">
+        <a href="./projects/special-offer/index.html" class="cards__link">
+          <img
+            src="./images/special-offer.webp"
+            aria-labelledby="special-offer"
+            class="cards__thumbnail"
+          />
+        </a>
+        <footer class="cards__footer">
+          <h6 id="special-offer" class="cards__title">special offer</h6>
+          <span class="cards__date">2021.1.23</span>
+        </footer>
+      </article>
+      <article class="cards">
+        <a href="./projects/a1-office/index.html" class="cards__link">
+          <img
+            src="./images/a1-office.webp"
+            aria-labelledby="a1-office"
+            class="cards__thumbnail"
+          />
+        </a>
+        <footer class="cards__footer">
+          <h6 id="a1-office" class="cards__title">a1 office</h6>
+          <span class="cards__date">2021.1.24</span>
+        </footer>
+      </article>
+      <article class="cards">
+        <a
+          href="./projects/rodic-davidson-architects/index.html"
+          class="cards__link"
+        >
+          <img
+            src="./images/rodic.webp"
+            aria-labelledby="rodic-davidson-architects"
+            class="cards__thumbnail"
+          />
+        </a>
+        <footer class="cards__footer">
+          <h6 id="rodic-davidson-architects" class="cards__title">
+            rodić davidson architect
+          </h6>
+          <span class="cards__date">2022.6.13</span>
+        </footer>
+      </article>
+      <article class="cards">
+        <a href="./projects/beige/index.html" class="cards__link">
+          <img
+            src="./images/beige.webp"
+            aria-labelledby="beige-magazine"
+            class="cards__thumbnail"
+          />
+        </a>
+        <footer class="cards__footer">
+          <h6 id="beige-magazine" class="cards__title">beige</h6>
+          <span class="cards__date">2022.6.14</span>
+        </footer>
+      </article>
+      <article class="cards">
+        <a href="./projects/donica-ida/index.html" class="cards__link">
+          <img
+            src="./images/donica-ida.webp"
+            aria-labelledby="donica-ida-art-director"
+            class="cards__thumbnail"
+          />
+        </a>
+        <footer class="cards__footer">
+          <h6 id="donica-ida-art-director" class="cards__title">donica ida</h6>
+          <span class="cards__date">2022.6.15</span>
+        </footer>
+      </article>
+      <article class="cards">
+        <a href="./projects/canal-street-market/index.html" class="cards__link">
+          <img
+            src="./images/canal-st.webp"
+            aria-labelledby="canal-street-market"
+            class="cards__thumbnail"
+          />
+        </a>
+        <footer class="cards__footer">
+          <h6 id="canal-street-market" class="cards__title">
+            canal street market
+          </h6>
+          <span class="cards__date">2022.6.17</span>
+        </footer>
+      </article>
+      <article class="cards">
+        <a href="./projects/won-hundred/index.html" class="cards__link">
+          <img
+            src="./images/wonhundred.webp"
+            aria-labelledby="won-hundred-shop"
+            class="cards__thumbnail"
+          />
+        </a>
+        <footer class="cards__footer">
+          <h6 id="won-hundred-shop" class="cards__title">won hundred</h6>
+          <span class="cards__date">2022.6.21</span>
+        </footer>
+      </article>
+      <article class="cards">
+        <a href="./projects/won-hundred-v2/index.html" class="cards__link">
+          <img
+            src="./images/wonhundred-2.webp"
+            aria-labelledby="won-hundred-shop-v2"
+            class="cards__thumbnail"
+          />
+        </a>
+        <footer class="cards__footer">
+          <h6 id="won-hundred-shop-v2" class="cards__title">won hundred v2</h6>
+          <span class="cards__date">2022.6.22</span>
+        </footer>
+      </article>
+    </main>
+    <footer class="home__footer">
+      <p class="footer__copyright">
+        &copy;Copyright 2022 by <span class="copyright__name">sonyun247</span>.
+        All rights reversed.
+      </p>
+      <nav class="footer__nav">
+        <h6 class="footer__title">try it!</h6>
         <ul>
-          <li><img src="/imgs/visa.png" alt="visa" /><span>visa</span></li>
-          <li><img src="/imgs/visa.png" alt="visa" /><span>visa</span></li>
-          <li><img src="/imgs/visa.png" alt="visa" /><span>visa</span></li>
-          <li><img src="/imgs/visa.png" alt="visa" /><span>visa</span></li>
-          <li><img src="/imgs/visa.png" alt="visa" /><span>visa</span></li>
+          <li><a href="https://flexboxfroggy.com/#ko">flexbox froggy</a></li>
+          <li><a href="https://cssgridgarden.com/#ko">grid garden</a></li>
+          <li>
+            <a href="https://flukeout.github.io/">css diner</a>
+          </li>
         </ul>
-      </section>
+      </nav>
+      <address class="footer__address">
+        <h6 class="footer__title">contact</h6>
+        <a href="https://github.com/sonyun247/css-practice">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="mailto:sonyun24@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </address>
     </footer>
   </body>
 </html>

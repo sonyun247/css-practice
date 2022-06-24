@@ -34,7 +34,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@parcel/transformer-sass", "npm:2.6.0"],\
-            ["parcel", "npm:2.6.0"]\
+            ["parcel", "npm:2.6.0"],\
+            ["parcel-plugin-static-files-copy", "npm:2.6.0"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -1686,7 +1687,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["css-practice", "workspace:."],\
             ["@parcel/transformer-sass", "npm:2.6.0"],\
-            ["parcel", "npm:2.6.0"]\
+            ["parcel", "npm:2.6.0"],\
+            ["parcel-plugin-static-files-copy", "npm:2.6.0"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -2259,6 +2261,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["inherits", [\
+        ["npm:2.0.3", {\
+          "packageLocation": "./.yarn/cache/inherits-npm-2.0.3-401e64b080-78cb8d7d85.zip/node_modules/inherits/",\
+          "packageDependencies": [\
+            ["inherits", "npm:2.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:2.0.4", {\
           "packageLocation": "./.yarn/cache/inherits-npm-2.0.4-c66b3957a0-4a48a73384.zip/node_modules/inherits/",\
           "packageDependencies": [\
@@ -2523,6 +2532,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["minimatch", [\
+        ["npm:3.0.4", {\
+          "packageLocation": "./.yarn/cache/minimatch-npm-3.0.4-6e76f51c23-66ac295f8a.zip/node_modules/minimatch/",\
+          "packageDependencies": [\
+            ["minimatch", "npm:3.0.4"],\
+            ["brace-expansion", "npm:1.1.11"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:3.1.2", {\
           "packageLocation": "./.yarn/cache/minimatch-npm-3.1.2-9405269906-c154e56640.zip/node_modules/minimatch/",\
           "packageDependencies": [\
@@ -2859,6 +2876,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["parcel-plugin-static-files-copy", [\
+        ["npm:2.6.0", {\
+          "packageLocation": "./.yarn/cache/parcel-plugin-static-files-copy-npm-2.6.0-94359fbf6f-891fa08717.zip/node_modules/parcel-plugin-static-files-copy/",\
+          "packageDependencies": [\
+            ["parcel-plugin-static-files-copy", "npm:2.6.0"],\
+            ["minimatch", "npm:3.0.4"],\
+            ["path", "npm:0.12.7"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["parent-module", [\
         ["npm:1.0.1", {\
           "packageLocation": "./.yarn/cache/parent-module-npm-1.0.1-1fae11b095-6ba8b25514.zip/node_modules/parent-module/",\
@@ -2878,6 +2906,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["error-ex", "npm:1.3.2"],\
             ["json-parse-even-better-errors", "npm:2.3.1"],\
             ["lines-and-columns", "npm:1.2.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["path", [\
+        ["npm:0.12.7", {\
+          "packageLocation": "./.yarn/cache/path-npm-0.12.7-bddabe2e86-5dedb71e78.zip/node_modules/path/",\
+          "packageDependencies": [\
+            ["path", "npm:0.12.7"],\
+            ["process", "npm:0.11.10"],\
+            ["util", "npm:0.10.4"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2962,6 +3001,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["posthtml-render", "npm:3.0.0"],\
             ["is-json", "npm:2.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["process", [\
+        ["npm:0.11.10", {\
+          "packageLocation": "./.yarn/cache/process-npm-0.11.10-aeb3b641ae-bfcce49814.zip/node_modules/process/",\
+          "packageDependencies": [\
+            ["process", "npm:0.11.10"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3377,6 +3425,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["unique-slug", "npm:2.0.2"],\
             ["imurmurhash", "npm:0.1.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["util", [\
+        ["npm:0.10.4", {\
+          "packageLocation": "./.yarn/cache/util-npm-0.10.4-7c577db41a-913f9a90d0.zip/node_modules/util/",\
+          "packageDependencies": [\
+            ["util", "npm:0.10.4"],\
+            ["inherits", "npm:2.0.3"]\
           ],\
           "linkType": "HARD"\
         }]\
