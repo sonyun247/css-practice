@@ -1,0 +1,230 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-105%);
+  }
+}
+
+@keyframes moveRight {
+  from {
+    transform: translateX(-105%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #efea45;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  display: flex;
+}
+
+.grid-wrapper {
+  text-transform: uppercase;
+  border: 4px solid #ff6c2c;
+  flex-grow: 1;
+  grid-template-rows: 5% 90% 5%;
+  grid-template-columns: 1fr;
+  margin: .7em;
+  font-style: italic;
+  font-weight: bold;
+  display: grid;
+}
+
+.ticker {
+  color: #ff6c2c;
+  letter-spacing: .1em;
+  white-space: nowrap;
+  background-color: #fff;
+  grid-column: span 3;
+  align-items: center;
+  font-size: 1.5vw;
+  display: flex;
+  overflow: hidden;
+}
+
+.ticker-top {
+  border-bottom: 4px solid #ff6c2c;
+  grid-row-start: 1;
+}
+
+.ticker-bottom {
+  border-top: 4px solid #ff6c2c;
+  grid-row-start: -2;
+}
+
+.ticker__text--move-left {
+  animation: moveLeft 40s linear infinite;
+}
+
+.ticker__text--move-right {
+  animation: moveRight 40s linear infinite;
+}
+
+main {
+  grid-template-rows: 100%;
+  grid-template-columns: 4% 92% 4%;
+  display: grid;
+}
+
+nav {
+  z-index: 99;
+  letter-spacing: .1em;
+  background-color: #ff6c2c;
+  grid-template-columns: 100%;
+  font-size: .9vw;
+  display: grid;
+}
+
+nav > div {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  overflow: auto;
+}
+
+.nav-left {
+  grid-template-rows: 55% 35% 10%;
+}
+
+.nav-right {
+  color: #fff;
+  background-color: #40ac49;
+  border-left: 4px solid #ff6c2c;
+  grid-template-rows: 50% 50%;
+  position: relative;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav span, .nav i {
+  cursor: pointer;
+}
+
+.nav-left .menu li:not(:last-child):after {
+  content: "✦";
+  padding: .7vw;
+}
+
+.nav-left .menu {
+  color: #fff;
+}
+
+.nav-left .news, .nav-left .sns {
+  color: #ff6c2c;
+  background-color: #fff;
+  border-right: 4px solid #ff6c2c;
+}
+
+.nav-left .news {
+  border-bottom: 4px solid #ff6c2c;
+}
+
+.nav-left .news span {
+  text-orientation: sideways;
+  transform: rotate(180deg);
+}
+
+.nav .emoji, .nav i {
+  font-size: 2vw;
+}
+
+.nav-right .togo {
+  border-bottom: 4px solid #ff6c2c;
+}
+
+.widget--chat {
+  height: 4.3vw;
+  width: 4.3vw;
+  color: #fff;
+  background-color: #ff6c2c;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -2vh;
+  right: 2vw;
+  box-shadow: 5px 5px 10px #0000004d;
+}
+
+.hero {
+  height: 100%;
+  grid-template-rows: 1fr;
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: 1fr;
+  display: grid;
+}
+
+.hero__logo {
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero__logo img {
+  width: 35vw;
+}
+
+.hero__image {
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__image:first-child {
+  background-image: url("https://source.unsplash.com/random/450x450");
+}
+
+.hero__image:nth-child(2) {
+  background-image: url("https://source.unsplash.com/random/450x451");
+}
+
+/*# sourceMappingURL=index.5d64236a.css.map */

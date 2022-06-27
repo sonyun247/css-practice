@@ -1,0 +1,113 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body > *, body .number__row .number, body .menu {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+body .number__row .number, body .menu {
+  cursor: pointer;
+  background-color: #fff;
+  transition: color .3s ease-out, background-color .3s ease-out;
+}
+
+body .number__row .number:hover, body .menu:hover {
+  color: #fff;
+  background-color: #af7832;
+}
+
+@keyframes moveText {
+  from {
+    transform: translateX(80%);
+  }
+
+  to {
+    transform: translateX(-80%);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-transform: uppercase;
+  height: 100vh;
+  background-color: #af7832;
+  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  gap: 1px;
+  display: grid;
+}
+
+body > * {
+  color: #af7832;
+  background-color: #fff;
+  font-size: 1.5em;
+}
+
+body .title {
+  letter-spacing: .4em;
+  font-style: italic;
+  font-weight: 600;
+}
+
+body .center-img {
+  background-image: url("../../even.56d4f5a4.jpg");
+  background-position: center;
+  background-size: cover;
+  grid-area: 2 / 2 / -2 / -2;
+}
+
+body .number__row {
+  background-color: #af7832;
+  justify-content: stretch;
+  align-items: stretch;
+  gap: 1px;
+  display: grid;
+}
+
+body .moving-text {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+body .moving-text span {
+  animation: moveText 10s ease-out infinite;
+}
+
+/*# sourceMappingURL=index.699ec887.css.map */

@@ -1,0 +1,2 @@
+const btns=document.querySelectorAll(".number"),img=document.querySelector(".center-img");imgs=["url(/static/odd.jpg)","url(/static/even.jpg)","url(/static/odd.jpg)","url(/static/even.jpg)","url(/static/odd.jpg)","url(/static/even.jpg)","url(/static/odd.jpg)","url(/static/even.jpg)","url(/static/odd.jpg)","url(/static/even.jpg)"];const imgHandler=t=>{const{style:e}=img;e.backgroundImage=imgs[t]};btns.forEach(((t,e)=>{t.addEventListener("mouseover",(t=>{imgHandler(e)}))}));
+//# sourceMappingURL=index.91231276.js.map

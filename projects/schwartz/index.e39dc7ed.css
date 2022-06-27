@@ -1,0 +1,337 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+main .hero div:first-child {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+main .subjects-ad article div p, main .subjects-vertical article div p, main .hero p {
+  font-size: 2.1em;
+  line-height: 1.4;
+}
+
+main h4 {
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+main .btn {
+  text-align: center;
+  color: inherit;
+  width: 9em;
+  border-radius: 20px;
+  padding: .7em;
+  font-size: 1em;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  grid-template-columns: 1fr 8fr 1fr;
+  display: grid;
+}
+
+body main {
+  grid-column: 2 / -2;
+}
+
+body footer {
+  grid-column: 1 / -1;
+}
+
+body img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  height: 8vh;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 10px #0000004d;
+}
+
+header nav {
+  height: 100%;
+}
+
+header nav ul {
+  height: 100%;
+  align-items: center;
+  margin-left: 2vw;
+  display: flex;
+}
+
+header nav ul li {
+  cursor: pointer;
+  padding-right: 7vw;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+main {
+  margin-top: 8vh;
+}
+
+main article {
+  border-bottom: .3px solid #0003;
+  padding: 3vh 0;
+}
+
+main .btn {
+  border: .3px solid #0003;
+}
+
+main .hero div:first-child {
+  border-bottom: .3px solid #0003;
+  flex-direction: column;
+}
+
+main .hero div:nth-child(4) {
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3vh 0 22vh;
+  font-size: 1.5em;
+  font-weight: 600;
+  display: flex;
+}
+
+main .hero div:nth-child(4) i {
+  padding-right: .5vw;
+  font-size: .8em;
+}
+
+main .hero .hero-img {
+  height: 70vh;
+  width: 65%;
+  background-image: url("https://schwartzmedia.com.au/assets/images/carousel_tsp_2.JPG");
+  margin-top: 7vh;
+}
+
+main .hero h2 {
+  padding: 1em;
+  font-size: 2.2em;
+  font-weight: 600;
+}
+
+main .hero p {
+  padding-top: 10vh;
+}
+
+main .hero p span {
+  cursor: pointer;
+  padding-right: 3em;
+  font-size: .7em;
+  font-weight: 600;
+}
+
+main .subjects-vertical {
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+main .subjects-vertical article {
+  height: 60vh;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+}
+
+main .subjects-vertical article div {
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 5vw;
+  display: flex;
+}
+
+main .subjects-vertical article img {
+  height: 100%;
+  width: 100%;
+  padding-left: 1vw;
+}
+
+main .subjects-vertical article:nth-child(2) div, main .subjects-vertical article:nth-child(4) div {
+  padding-left: 1vw;
+}
+
+main .subjects-vertical article:nth-child(2) img, main .subjects-vertical article:nth-child(4) img {
+  order: -1;
+  padding-right: 1vw;
+}
+
+main .subjects-horizontal {
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+}
+
+main .subjects-horizontal article:first-child {
+  padding-right: 1.2vw;
+}
+
+main .subjects-horizontal article h4 {
+  padding-bottom: 5vh;
+}
+
+main .subjects-horizontal article img {
+  height: 55vh;
+  width: 100%;
+  padding-bottom: 3vh;
+}
+
+main .subjects-horizontal article p {
+  margin-bottom: 5vh;
+  font-size: 1.5em;
+  line-height: 1.2;
+}
+
+main .subjects-horizontal article .btns {
+  align-items: center;
+  display: flex;
+}
+
+main .subjects-horizontal article .btns a {
+  margin-right: 1vw;
+}
+
+main .subjects-horizontal article a {
+  margin-bottom: 5vh;
+}
+
+main .subjects-ad article {
+  height: 60vh;
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+}
+
+main .subjects-ad article div {
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+}
+
+main .subjects-ad article div h4 {
+  margin-bottom: 5vh;
+}
+
+main .subjects-ad article div a {
+  margin-top: 7vh;
+}
+
+main .subjects-ad article img {
+  height: 100%;
+  width: 100%;
+  padding-left: 1vw;
+}
+
+main .links {
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+}
+
+main .links .link {
+  height: 40vh;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 7vh;
+  display: flex;
+}
+
+main .links .link p {
+  font-size: 1.5em;
+  line-height: 1.4;
+}
+
+footer {
+  height: 45vh;
+  color: #fff;
+  background-color: #464646;
+  grid-template-columns: 10% 40% 50%;
+  display: grid;
+}
+
+footer .footer-top, footer .footer-bottom {
+  grid-column: 2 / -1;
+}
+
+footer .footer-top {
+  grid-template-columns: 45% 55%;
+  padding: 4vh 0;
+  display: grid;
+}
+
+footer .footer-top span {
+  font-size: 1.7em;
+  font-weight: 600;
+}
+
+footer .footer-top ul {
+  align-items: flex-start;
+  display: flex;
+}
+
+footer .footer-top ul li {
+  padding-right: 7vw;
+  font-size: 1em;
+}
+
+footer .footer-bottom li {
+  padding-bottom: 1vh;
+}
+
+footer .footer-bottom li:first-child {
+  padding-top: 5vh;
+}
+
+footer .footer-bottom li:nth-child(3) {
+  padding-top: 3vh;
+}
+
+/*# sourceMappingURL=index.e39dc7ed.css.map */
